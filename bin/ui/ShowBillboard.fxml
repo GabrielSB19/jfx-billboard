@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="showPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="164.0" layoutY="14.0" text="Show Dangerous Billboards">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackShowToMain" text="Back" />
+      <TableView fx:id="mainTable" layoutY="58.0" prefHeight="375.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tbcWidth" prefWidth="120.0" text="Width" />
+          <TableColumn fx:id="tbcHeight" prefWidth="120.0" text="Height" />
+            <TableColumn fx:id="tbcUse" prefWidth="120.0" text="Use" />
+            <TableColumn fx:id="tbcBrand" prefWidth="120.0" text="Brand" />
+            <TableColumn fx:id="tbcArea" prefWidth="120.0" text="Area" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
